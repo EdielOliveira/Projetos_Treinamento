@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![GitHub repo size](https://github.com/EdielOliveira/Projetos_Treinamento?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/EdielOliveira/Projetos_Treinamento?style=for-the-badge)
 <img src="http://img.shields.io/static/v1?label=LINGUAGEM&message=%20JAVA&color=B07219&style=for-the-badge">
 <img src="http://img.shields.io/static/v1?label=PLATAFORMA&message=%20ECLIPSE&color=FF7F27&style=for-the-badge">
 
