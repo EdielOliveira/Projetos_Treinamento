@@ -10,8 +10,8 @@ public class BuscaBasica {
 
 		pessoas[0] = new Pessoa("João");
 		pessoas[1] = new Pessoa("Maria");
-		pessoas[2] = new Pessoa("Udiel");
-		pessoas[3] = new Pessoa("Laysiene");
+		pessoas[2] = new Pessoa("Pedro");
+		pessoas[3] = new Pessoa("Osvaldo");
 
 		try (Scanner scanner = new Scanner(System.in)) {
 			String opcao = "";
