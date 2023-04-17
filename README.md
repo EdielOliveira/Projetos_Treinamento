@@ -1,4 +1,4 @@
-<h2 align="center"> Código Formulado e sendo Desenvolvido através de um Curso</h2>
+<h2 align="center"> Pondo em Pratica tudo que estou aprendendo no Curso</h2>
 
 <div align="center">
 
