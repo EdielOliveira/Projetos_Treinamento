@@ -1,5 +1,4 @@
 package br.com.alura;
-
 import java.util.Scanner;
 
 public class BuscaBasica {
@@ -13,6 +12,7 @@ public class BuscaBasica {
 		pessoas[2] = new Pessoa("Pedro");
 		pessoas[3] = new Pessoa("Osvaldo");
 
+		
 		try (Scanner scanner = new Scanner(System.in)) {
 			String opcao = "";
 
