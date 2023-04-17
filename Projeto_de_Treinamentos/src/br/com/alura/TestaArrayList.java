@@ -10,6 +10,7 @@ public class TestaArrayList {
 		Produtos P2 = new Produtos("Amarela", "P", 25);
 		Produtos P3 = new Produtos("Verde", "M", 30);
 		Produtos P4 = new Produtos("Preta", "GG", 50);
+		Produtos P5 = new Produtos("Cinza", "PP", 40);
 
 		ArrayList<Produtos> produto = new ArrayList<>();
 
@@ -17,6 +18,7 @@ public class TestaArrayList {
 		produto.add(P2);
 		produto.add(P3);
 		produto.add(P4);
+		produto.add(P5);
 
 		Collections.sort(produto);
 		System.out.println(produto);
