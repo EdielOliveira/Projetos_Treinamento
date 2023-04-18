@@ -5,13 +5,17 @@ import java.util.ArrayList;
 public class Produtos implements Comparable<Produtos>{
 	private String tamanho;
 	private String cor;
-	private int valor;
+	private double valor;
 
 
 	public Produtos(String tamanho, String cor, int valor) {
 		this.tamanho = tamanho;
 		this.cor = cor;
 		this.valor = valor;
+	}
+
+	public Produtos(Produtos compra) {
+		// TODO Auto-generated constructor stub
 	}
 
 	public String getCor() {
@@ -21,7 +25,7 @@ public class Produtos implements Comparable<Produtos>{
 	public String getTamanho() {
 		return tamanho;
 	}
-	public int getValor() {
+	public double getValor() {
 		return valor;
 	}
 	public int getValorTotal(ArrayList<Produtos> produtos) {
