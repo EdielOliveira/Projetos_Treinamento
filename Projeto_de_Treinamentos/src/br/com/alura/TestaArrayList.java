@@ -3,24 +3,22 @@ package br.com.alura;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class TestaArrayList{
+public class TestaArrayList {
 	public static void main(String[] args) {
-		
-		Produtos P1 = new Produtos("Azul", "G", 35);
-		Produtos P2 = new Produtos("Verde", "M", 45);
-		Produtos P3 = new Produtos("Amarela", "P", 55);
-		Produtos P4 = new Produtos("Preta", "GG", 65);
-		
-		
+
+		Produtos P1 = new Produtos("Preta", "G", 35);
+		Produtos P2 = new Produtos("Branca", "M", 20);
+		Produtos P3 = new Produtos("Cinza", "P", 25);
+		Produtos P4 = new Produtos("Verde", "GG", 55);
+
 		ArrayList<Produtos> produto = new ArrayList<>();
-		
+
 		produto.add(P1);
 		produto.add(P2);
 		produto.add(P3);
 		produto.add(P4);
-		
+
 		Collections.sort(produto);
-		System.out.println(produto);
 
 		int total = 0; // variável para armazenar o total de preços
 
@@ -28,8 +26,11 @@ public class TestaArrayList{
 			total += p.getValor(); // adicionando o preço do produto atual ao total
 		}
 
-		System.out.println("R$: " + total + " reais no total :D");
+		for (Produtos produtos : produto) {
+			System.out.println(produtos);
+		}
+
+		System.out.println("-> Valor Total: " + total);
+
 	}
 }
-
-

@@ -2,20 +2,16 @@ package br.com.alura;
 
 import java.util.ArrayList;
 
-public class Produtos implements Comparable<Produtos>{
-	private String tamanho;
+public class Produtos implements Comparable<Produtos> {
 	private String cor;
+	private String tamanho;
 	private double valor;
 
+	public Produtos(String cor, String tamanho, double valor) {
 
-	public Produtos(String tamanho, String cor, int valor) {
-		this.tamanho = tamanho;
 		this.cor = cor;
+		this.tamanho = tamanho;
 		this.valor = valor;
-	}
-
-	public Produtos(Produtos compra) {
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getCor() {
@@ -25,23 +21,28 @@ public class Produtos implements Comparable<Produtos>{
 	public String getTamanho() {
 		return tamanho;
 	}
+
 	public double getValor() {
 		return valor;
 	}
+
 	public int getValorTotal(ArrayList<Produtos> produtos) {
 		int valorTotal = 0;
-		for (Produtos p : produtos) { // para cada aula quero fazer que Tempo Total vale ele mesmo mais aula.getTempo
+		for (Produtos p : produtos) {
 			valorTotal += p.getValor();
 		}
 		return valorTotal;
 	}
-		
+
+	public int compareTo(Produtos outroProdutos) {
+
+		return this.cor.compareTo(outroProdutos.cor);
+	}
+
 	@Override
 	public String toString() {
-		return "\r\n" + "->Blusa: " + this.tamanho + " ,tamanho: " + this.cor + ", R$ " + this.valor + "";
+		// TODO Auto-generated method stub
+		return "-> Blusa: " + this.cor + ", tamanho: " + this.tamanho + ", R$: " + this.valor;
 	}
-	public int compareTo(Produtos outroProdutos) {
-		return this.tamanho.compareTo(outroProdutos.tamanho);
-		
-	}
+
 }
